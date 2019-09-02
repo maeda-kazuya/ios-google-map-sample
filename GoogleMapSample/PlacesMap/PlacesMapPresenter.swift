@@ -68,7 +68,7 @@ final class PlacesMapPresenter: NSObject, PlacesMapPresenterInput {
                         let marker = Marker()
                         marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
                         marker.title = place.name
-                        marker.snippet = "詳細はこちら"
+                        marker.snippet = "See detail"
                         marker.placeId = place.placeId
                         marker.map = self.mapView
                     }

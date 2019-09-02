@@ -49,7 +49,7 @@ final class PlacesMapModel: PlacesMapModelInput {
             return nil
         }
 
-        let keyword = "コンビニ"
+        let keyword = "Restaurant"
         let radius = Int(12000 / zoom)
         
         if let keyword = keyword.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {

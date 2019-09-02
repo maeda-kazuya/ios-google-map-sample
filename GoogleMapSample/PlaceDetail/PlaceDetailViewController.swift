@@ -48,11 +48,11 @@ class PlaceDetailViewController: UIViewController {
 extension PlaceDetailViewController: PlaceDetailPresenterOutput {
     func showPlaceInfo(place: GMSPlace) {
         nameLabel.text = place.name
-        addressLabel.text = place.formattedAddress?.replacingOccurrences(of: "日本、", with: "")
+        addressLabel.text = place.formattedAddress
         urlButton.setTitle(place.website?.absoluteURL.absoluteString, for: UIControl.State.normal)
 
         if let phoneNumber = place.phoneNumber {
-            phoneLabel.text = "TEL : " + phoneNumber.replacingOccurrences(of: "+81 ", with: "0")
+            phoneLabel.text = "TEL : " + phoneNumber
         }
     }
     

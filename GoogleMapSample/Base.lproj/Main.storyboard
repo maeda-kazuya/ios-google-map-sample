@@ -32,7 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="地図から探す" id="kJT-YW-Z3Q">
+                    <navigationItem key="navigationItem" title="Search" id="kJT-YW-Z3Q">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="xXb-zr-ZI5">
                             <connections>
                                 <action selector="reload:" destination="9pv-A4-QxB" id="Zw0-lh-s7G"/>
@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="1688.8" y="-320.68965517241384"/>
         </scene>
-        <!--詳細-->
+        <!--Place Detail View Controller-->
         <scene sceneID="MFY-mR-URv">
             <objects>
                 <viewController id="1GR-4j-UIt" customClass="PlaceDetailViewController" customModule="GoogleMapSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,7 +111,7 @@
                                                     <constraint firstAttribute="height" constant="44" id="K2y-5i-Lwo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <state key="normal" title="Google Mapで開く" backgroundImage="button_green">
+                                                <state key="normal" title="Show in Google Map" backgroundImage="button_green">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -162,7 +162,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fWF-ky-Uap"/>
                     </view>
-                    <navigationItem key="navigationItem" title="詳細" id="C3X-97-dnO">
+                    <navigationItem key="navigationItem" id="C3X-97-dnO">
                         <barButtonItem key="rightBarButtonItem" image="star_negative" id="zwL-jF-C86">
                             <connections>
                                 <action selector="toggleBookmark:" destination="1GR-4j-UIt" id="dWZ-C3-YZ1"/>
@@ -182,7 +182,7 @@
             </objects>
             <point key="canvasLocation" x="2688.8000000000002" y="-321.58920539730138"/>
         </scene>
-        <!--お気に入り-->
+        <!--Bookmarks-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="BookmarkListViewController" customModule="GoogleMapSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -208,7 +208,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="お気に入り" id="U49-7k-kvW"/>
+                    <navigationItem key="navigationItem" title="Bookmarks" id="U49-7k-kvW"/>
                     <connections>
                         <outlet property="tableView" destination="KSJ-gc-TGs" id="djn-zk-oyr"/>
                         <segue destination="1GR-4j-UIt" kind="show" identifier="showPlaceDetail" id="gD7-jf-BBy"/>
