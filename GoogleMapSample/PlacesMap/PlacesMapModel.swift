@@ -54,9 +54,6 @@ final class PlacesMapModel: PlacesMapModelInput {
         
         if let keyword = keyword.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {
             return "\(Constant.apiDomain)json?location=\(latitude),\(longitude)&radius=\(radius)&keyword=\(keyword)&key=\(placesApiKey)"
-            
-            // Add request parameter: type
-//            return "\(Constant.apiDomain)json?location=\(latitude),\(longitude)&radius=\(radius)&keyword=\(keyword)&key=\(placesApiKey)&type=restaurant"
         } else {
             return nil
         }
